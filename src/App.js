@@ -23,35 +23,30 @@ function App() {
         </div>
         <main className="main-content">
           <h2>Joining Lightning</h2>
-          
-            <div className='form-group'>
-              < FontAwesomeIcon className='form-group-icon' icon={faGoogle} />
-              <input type='text' placeholder='Sign in with Google' />
-            </div>
-            <div className='form-group'>
+
+          <div className='form-group'>
+            < FontAwesomeIcon className='form-group-icon' icon={faGoogle} />
+            <input type='text' placeholder='Sign in with Google' />
+          </div>
+          <div className='form-group'>
             <FontAwesomeIcon className='form-group-icon' icon={faApple} />
-              <input type='text' placeholder='Sign up with Apple' />
-            </div>
-                 <h6>Or</h6>
-      
-      
-              <div className="form-group">
-            <FontAwesomeIcon className='form-group-icon' icon={faUser} />
-                <input type="text" placeholder="Enter your name" />
-              </div>
-              <div className="form-group">
+            <input type='text' placeholder='Sign up with Apple' />
+          </div>
+          <h6>Or</h6>
+
+
+          
+          <div className="form-group">
             <FontAwesomeIcon className='form-group-icon' icon={faEnvelope} />
-                <input type="email" placeholder="Enter your email" />
-              </div>
-              <div className="form-group">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          
+          <div className="form-group">
             <FontAwesomeIcon className='form-group-icon' icon={faLock} />
-                <input type="password" placeholder="Enter your password" />
-              </div>
-              <div className="form-group">
-            <FontAwesomeIcon className='form-group-icon' icon={faPhone} />
-                <input type="tel" placeholder="Enter your phone number" />
-              </div>
-              <button type="submit"className='submit-btn'>Sign Up</button>
+            <input type="password" placeholder="Enter your password" />
+          </div>
+          
+          <button type="submit" className='submit-btn'>Sign Up</button>
         </main>
       </div>
     </div>
