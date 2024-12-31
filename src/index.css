@@ -21,12 +21,19 @@
   justify-content: center;
 }
 
-.nav-bar {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+/*.nav-bar {
+flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ gap: 5px;
+ margin: 50px 30px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: green;
+ height: 20vh;
+ width: 70vw;
+}*/
 
 h2 {
   background: linear-gradient(135deg, #a0c4ff, #89c2d9);
@@ -39,7 +46,45 @@ h2 {
 }
 h6{
   text-align: center;
+  font-weight: bold;
 }
+.sub-container {
+  position: relative;
+  width: 80%;
+  margin: 20px 50px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-bar {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  height: 60vh;
+  width: 40%;
+}
+ .hamburger-menu {
+   display: block;
+   cursor: pointer;
+   font-size: 20px;
+   z-index: 1001;
+ }
+
+/* Hide Navbar when menuOpen is true */
+.nav-bar.hidden {
+  transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 
 .nav-bar ul {
   display: flex;
@@ -67,23 +112,9 @@ h6{
   color: rgb(24, 180, 232);
 }
 
-.nav-bar a:hover {
-  color: #0078ff;
-}
-
 .btn-container {
   display: flex;
   gap: 100px;
-}
-
-.sub-container {
-  position: relative;
-  width: 80%;
-  margin: 20px 50px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .main-content {
@@ -109,7 +140,7 @@ h6{
 .form-group {
   background: #fff;
   margin: 20px 30px 30px 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
 }
 
 .brand-form {
@@ -138,7 +169,7 @@ h6{
   background-color: #fff;
 }
 
-.form-group input {
+ .form-group input {
   align-items: center;
   gap: 10px;
   margin: 10px  10px;
@@ -174,18 +205,7 @@ h6{
     position: relative;
   }
   .main-content{
-    margin-top: 100px;
-  }
-
-  .nav-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 5px;
-    margin: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: 10px;
   }
 
   .nav-bar ul {
