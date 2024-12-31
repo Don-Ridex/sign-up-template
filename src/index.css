@@ -67,8 +67,9 @@ h6{
   color: #fff;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  height: 60vh;
-  width: 40%;
+  height: 25vh;
+  width: 30%;
+  border-radius: 5px;
 }
  .hamburger-menu {
    display: block;
@@ -87,10 +88,12 @@ h6{
 
 
 .nav-bar ul {
-  display: flex;
+  flex-direction: column;
   list-style: none;
   gap: 20px;
   padding: 0;
+  width: 30px;
+  height: 80px;
 }
 
 .nav-bar a {
@@ -205,7 +208,7 @@ h6{
     position: relative;
   }
   .main-content{
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .nav-bar ul {
