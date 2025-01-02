@@ -39,7 +39,7 @@ function App() {
         {/* Main Content */}
         <main className="main-content">
           <h2>Joining Lightning</h2>
-
+              <form>
           <div className='form-group'>
             <FontAwesomeIcon className='form-group-icon' icon={faGoogle} />
             <input type='text' placeholder='Sign in with Google' />
@@ -61,6 +61,7 @@ function App() {
           </div>
 
           <button type="submit" className='submit-btn'>Sign Up</button>
+          </form>
         </main>
       </div>
     </div>
