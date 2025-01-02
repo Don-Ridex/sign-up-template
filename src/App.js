@@ -7,6 +7,9 @@ import { faGoogle, faApple } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faEnvelope, faLock, faPhone, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,26 +23,37 @@ function App() {
           <FontAwesomeIcon icon={menuOpen ? faTimes : faBars}
             className="hamburger-icon" onClick={toggleMenu} />
         </div>
-        <nav className={`nav-bar ${menuOpen ? '' : 'hidden'}`}>
+        {/* <nav className={`nav-bar ${menuOpen ? '' : 'hidden'}`}> */}
 
-          <ul >
-            <li><a href="#home">Product</a></li>
-            <li><a href="#products">Pricing</a></li>
-            <li><a href="#pricing">Learn</a></li>
-          </ul>
-        </nav>
+          {/* <ul > */}
+            {/* <li><a href="#home">Product</a></li> */}
+            {/* <li><a href="#products">Pricing</a></li> */}
+            {/* <li><a href="#pricing">Learn</a></li> */}
+          {/* </ul> */}
+        {/* </nav> */}
 
+        {menuOpen ? (
+          <nav className="nav-bar">
+            <ul>
+              <li><a href="#home">Product</a></li>
+              <li><a href="#products">Pricing</a></li>
+              <li><a href="#pricing">Learn</a></li>
+            </ul>
+          </nav>
+        ) : (
+<></>)
+}
 
         {/* Button Container */}
         <div className='btn-container'>
           <button className='login'>Login</button>
           <button className='signup'>Sign Up</button>
         </div>
-
+    
         {/* Main Content */}
         <main className="main-content">
           <h2>Joining Lightning</h2>
-              <form>
+              <form className='form-action' onSubmit={handleSubmit}>
           <div className='form-group'>
             <FontAwesomeIcon className='form-group-icon' icon={faGoogle} />
             <input type='text' placeholder='Sign in with Google' />
